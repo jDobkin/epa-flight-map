@@ -75,7 +75,10 @@ function createFlightPoints(data) {
     data,
     pickable: true,
     pointType: "circle",
-    getPosition: f => f.geometry.coordinates,
+    getPosition: f => {
+      const coords = f?.geometry?.coordinates;
+      return Array.isArray(coords) ? coords : [0, 0]; // fallback to dummy
+      },
     getFillColor: f => getColorForEmissions(f.properties.emissions),
     getRadius: f => Math.sqrt(f.properties.emissions || 0) * 0.2 + 300,
     radiusUnits: "meters",
