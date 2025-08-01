@@ -3,7 +3,7 @@ import { MapboxOverlay } from "@deck.gl/mapbox";
 import { GeoJsonLayer } from "@deck.gl/layers";
 import "./style.css";
 
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_API || "sk.eyJ1IjoiamRvYmtpbiIsImEiOiJjbWR0MzZ3dG4xMHh4MmpwdjU2aWg4YXJhIn0.pyNMV5S7s78A70wvz0nWeg";
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_API || "pk.eyJ1IjoiamRvYmtpbiIsImEiOiJja3dvang3ODMwMWxxMm9wNGFxcDRjdnV1In0.isHSTiX3XD0xMVX1zPysBA";
 
 const map = new mapboxgl.Map({
   container: "map",
