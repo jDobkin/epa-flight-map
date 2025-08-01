@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.1652, 39.9526]
+      },
+      "properties": {
+        "facility": "Philadelphia Plant",
+        "emissions": 123456,
+        "year": 2022,
+        "sector": "Power Plants",
+        "state": "PA"
+      }
+    }
+  ]
+}
