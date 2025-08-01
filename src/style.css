@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#choropleth-select {
+  margin-top: 4px;
+  width: 180px;
+  font-size: 14px;
+}
+
+#choropleth-legend {
+  margin-top: 10px;
+}
+
+#choropleth-legend div {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+#choropleth-legend div div {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+}
